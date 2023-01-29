@@ -9,13 +9,16 @@ namespace xadrez_consolee
         {
             for (int i=0; i<tab.linhas; i++)
             {
-                for(int j=0; j<tab.colunas; j++)
+                for (int j=0; j<tab.colunas; j++)
                 {
-                    if(tab.peca(i,j) == null)
+                    if (tab.peca(i,j) == null)
                     {
                         Console.Write("- ");
                     }
-                    Console.Write(tab.peca(i,j) + " ");
+                    else {
+                        Console.Write(tab.peca(i, j) + " ");
+                    }
+                    
                 }
 
                 Console.WriteLine();
